@@ -12,7 +12,6 @@ public class Month {
 	}
 
 	public Month(String nombre) {
-		super();
 		this.nombre = nombre;
 	}
 
