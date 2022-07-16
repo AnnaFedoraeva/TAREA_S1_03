@@ -13,9 +13,10 @@ public class Countries {
 		Scanner sc = new Scanner(System.in);
 
 		Map<String, String> map = Leer_txt.leer("C:\\Users\\anna1\\Documents\\IT ACADEMY\\countries.txt");
+		
 		Map<String, Integer> mapPoints = new HashMap<>();
 		// añadimos los datos de consola en HashMap que contiene puntos y nombres
-		for (int i = 1; i <= 2; i++) {
+		for (int i = 1; i <= 10; i++) {
 			System.out.println("Introduce tu nombre:");
 			String nombre = sc.nextLine();
 			Object[] keySet = map.keySet().toArray();
@@ -34,6 +35,8 @@ public class Countries {
 
 		BufferedWriter archivoCreado = Crear_txt.crear("C:\\Users\\anna1\\Documents\\IT ACADEMY\\classificacio.txt",
 				mapPoints);
+		
+		System.out.println(archivoCreado);
 	}
 
 }
