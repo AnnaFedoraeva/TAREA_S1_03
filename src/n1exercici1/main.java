@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 
+//Crea una classe anomenada Month amb un atribut "name" (que emmagatzemarà el nom del mes de l'any). 
+//Afegeix 11 objectes Month (cadascun amb el seu atribut diferent) en un ArrayList, a excepció de l'objecte amb atribut "Agost". 
+//Després, efectua la inserció en el lloc que correspon a aquest mes i demostra que l’ArrayList manté l'ordre correcte.
+//Converteix l’ArrayList de l’exercici anterior en un HashSet i assegura’t que no permet duplicats.
+//Recorre la llista amb un for i amb un iterador.
+
 public class main {
 
 	public static void main(String[] args) {
@@ -38,15 +44,13 @@ public class main {
 
 		meses.add(7, agosto);
 
-		System.out.println(meses.toString());
+		System.out.println("El mes agosto esta en la posición correcta: " + meses.toString());
 
 		HashSet<Month> hashSet = new HashSet<Month>(meses);
 
 		hashSet.add(agosto);
 		hashSet.add(agosto);
 		hashSet.add(agosto);
-
-		System.out.println(hashSet);
 		
 		int contador = 0;
 		
@@ -56,7 +60,7 @@ public class main {
 				contador++;
 			}
 		}
-		System.out.println(contador);
+		System.out.println("El mes de agosto aparece en la lista solo una vez: " + contador);
 		
 		//recorremos la lista con un iterador
 
