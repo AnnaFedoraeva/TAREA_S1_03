@@ -17,7 +17,7 @@ public class Month {
 
 	@Override
 	public String toString() {
-		return "Nombre del mes: " + nombre + ";";
+		return "Nombre del mes: " + nombre;
 	}
 	
 
